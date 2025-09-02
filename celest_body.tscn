@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://ch5rrsh4p8ovo"]
+
+[ext_resource type="Script" uid="uid://drnhd8mp3vpao" path="res://CelestBody.cs" id="1_mfjod"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_oltqi"]
+
+[node name="CelestBody" type="Node3D"]
+script = ExtResource("1_mfjod")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("SphereMesh_oltqi")

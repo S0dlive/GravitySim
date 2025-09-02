@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://1qd7dojj55hy"]
+
+[ext_resource type="Script" uid="uid://crcsarlmqtki1" path="res://GravitySimulator.cs" id="1_rpg24"]
+[ext_resource type="Script" uid="uid://b2hu3madrccnt" path="res://CameraController.cs" id="2_3vi8l"]
+[ext_resource type="PackedScene" uid="uid://ch5rrsh4p8ovo" path="res://celest_body.tscn" id="2_8rhti"]
+
+[node name="Base" type="Node3D"]
+script = ExtResource("1_rpg24")
+CelesyBodyPrefab = ExtResource("2_8rhti")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+script = ExtResource("2_3vi8l")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
